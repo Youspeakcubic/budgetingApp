@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="css/desktop.css">
+    <meta charset="utf-8">
+    <title>Budgeting app</title>
+  </head>
+  <body>
+    <div class = "entBudget">
+      <h2>Monthly income:</h2>
+      <input id = "incomeInput" type = "number"></input>
+      <button onclick="addBudget()">Add budget</button>
+    </div>
+    <div class = "entExpense">
+    <h2>Expense Name</h2>
+    <input id = "expenseName" type = "text"></input>
+    <h2>Expense Cost:</h2>
+      <input id = "expenseCost" type = "number"></input>
+    <h2>Expense Type:</h2>
+    <select id ="expenseType">
+    <option value = "rent">Rent</option>
+    <option value = "loan">Loan</option>
+    <option value = "Insurance">Insurance</option>
+    <option value = "food">Food</option>
+    <option value = "savings">Savings</option>
+    <option value = "luxury">Luxury</option>
+    </select>
+    <hr />
+    <button onclick = "addExpense()">Add expense</button>
+    </div>
+    <div class = "total">
+      <h2 id = "budgetCount" >Budget :</h2>
+    </div>
+    <div class = "expenseSummary">
+      <h2>Summary:</h2>
+      <ul id = "expenseItems">
+
+      </ul>
+    </div>
+    <script src = "budget.js"></script>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+html{
+  background-color: grey;
+}
+input{
+  font-size: 23.3px;
+}
+button{
+  font-size: 22px
+}
+select{
+  font-size: 22px;
+}
+.entBudget{
+  position: absolute;
+  left:2%;
+  top:5%;
+  width:15%;
+  max-width: 15%;
+  height:15%;
+
+}
+.entExpense{
+  position: absolute;
+  left:2%;
+  top:40%;
+  width:15%;
+  max-width: 15%;
+  height:26%;
+
+}
+.total{
+  position: absolute;
+  right:10%;
+  top:5%;
+  width:70%;
+  max-width: 70%;
+  height:5%;
+
+}
+.expenseSummary{
+  position: absolute;
+  right:10%;
+  top:15%;
+  width:70%;
+  max-width: 88%;
+  height:70%;
+}
