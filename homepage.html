@@ -20,6 +20,7 @@
     <select id ="expenseType">
     <option value = "rent">Rent</option>
     <option value = "loan">Loan</option>
+    <option value = "Utilities">Utilities</option>
     <option value = "Insurance">Insurance</option>
     <option value = "food">Food</option>
     <option value = "savings">Savings</option>
@@ -33,9 +34,17 @@
     </div>
     <div class = "expenseSummary">
       <h2>Summary:</h2>
-      <ul id = "expenseItems">
+      <table id = "expenseItems">
+          <tr>
+            <td>Service name</td>
+            <td>Cost</td>
+            <td>Type</td>
+            <td id ="tableBudget">Budget:</td>
+          </tr>
+          <tr>
 
-      </ul>
+          </tr>
+      </table>
     </div>
     <script src = "budget.js"></script>
   </body>
