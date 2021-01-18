@@ -9,6 +9,7 @@
     <div class = "entBudget">
       <h2>Monthly income:</h2>
       <input id = "incomeInput" type = "number"></input>
+      <hr />
       <button onclick="addBudget()">Add budget</button>
     </div>
     <div class = "entExpense">
@@ -17,35 +18,37 @@
     <h2>Expense Cost:</h2>
       <input id = "expenseCost" type = "number"></input>
     <h2>Expense Type:</h2>
-    <select id ="expenseType">
-    <option value = "rent">Rent</option>
-    <option value = "loan">Loan</option>
-    <option value = "Utilities">Utilities</option>
-    <option value = "Insurance">Insurance</option>
-    <option value = "food">Food</option>
-    <option value = "savings">Savings</option>
-    <option value = "luxury">Luxury</option>
-    </select>
-    <hr />
-    <button onclick = "addExpense()">Add expense</button>
+      <select id ="expenseType">
+          <option value = "rent">Rent</option>
+          <option value = "loan">Loan</option>
+          <option value = "Utilities">Utilities</option>
+          <option value = "Insurance">Insurance</option>
+          <option value = "food">Food</option>
+          <option value = "savings">Savings</option>
+          <option value = "luxury">Luxury</option>
+        </select>
+      <hr />
+      <button onclick = "addExpense()">Add expense</button>
     </div>
     <div class = "total">
       <h2 id = "budgetCount" >Budget :</h2>
     </div>
-    <div class = "expenseSummary">
-      <h2>Summary:</h2>
-      <table id = "expenseItems">
+    <table id = "expenseItems">
+        <tr>
+          <td>Service name:</td>
+          <td>Type:</td>
+          <td>Cost:</td>
+          <td id ="tableBudget">Budget:</td>
+        </tr>
+    </table>
+    <footer>
+      <table class = "overall">
           <tr>
-            <td>Service name</td>
-            <td>Cost</td>
-            <td>Type</td>
-            <td id ="tableBudget">Budget:</td>
-          </tr>
-          <tr>
-
+              <td id="expenseCounter"># expenses:</td>
+              <td id="netFlow">Net flow:</td>
           </tr>
       </table>
-    </div>
+    </footer>
     <script src = "budget.js"></script>
   </body>
 </html>

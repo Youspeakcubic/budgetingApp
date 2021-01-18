@@ -10,6 +10,27 @@ button{
 select{
   font-size: 22px;
 }
+table{
+  border: 3px solid black;
+  position: absolute;
+  right:10%;
+  top:15%;
+  width:70%;
+}
+td {
+  font-size: 40px;
+  display:inline-block;
+  padding-right: 10%;
+}
+tr{
+  border: 3px solid black;
+}
+footer{
+  position: fixed;
+  bottom: 10%;
+  right:40%;
+  width:50%;
+}
 .entBudget{
   position: absolute;
   left:2%;
@@ -17,7 +38,6 @@ select{
   width:15%;
   max-width: 15%;
   height:15%;
-
 }
 .entExpense{
   position: absolute;
@@ -26,7 +46,6 @@ select{
   width:15%;
   max-width: 15%;
   height:26%;
-
 }
 .total{
   position: absolute;
@@ -35,13 +54,4 @@ select{
   width:70%;
   max-width: 70%;
   height:5%;
-
-}
-.expenseSummary{
-  position: absolute;
-  right:10%;
-  top:15%;
-  width:70%;
-  max-width: 88%;
-  height:70%;
 }
